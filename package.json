@@ -1,0 +1,33 @@
+{
+  "name": "bibliolens",
+  "version": "0.0.1",
+  "description": "it's a desktop application to manage a library, with advance python technology",
+  "main": "main.js",
+  "scripts": {
+    "test": "start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andresdevr/bibliolens.git"
+  },
+  "keywords": [
+    "python",
+    "html",
+    "css",
+    "js",
+    "javascript",
+    "machine",
+    "learning",
+    "bilio",
+    "lens",
+    "library",
+    "gmail",
+    "notifications"
+  ],
+  "author": "andresdevr, jex",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andresdevr/bibliolens/issues"
+  },
+  "homepage": "https://github.com/andresdevr/bibliolens#readme"
+}

@@ -1,10 +1,11 @@
 {
-  "name": "bibliolens",
+  "name": "BIBLIOLENS",
   "version": "0.0.1",
   "description": "it's a desktop application to manage a library, with advance python technology",
   "main": "main.js",
   "scripts": {
-    "test": "start"
+    "test": "start",
+    "start": "electron ."
   },
   "repository": {
     "type": "git",
@@ -29,5 +30,8 @@
   "bugs": {
     "url": "https://github.com/andresdevr/bibliolens/issues"
   },
-  "homepage": "https://github.com/andresdevr/bibliolens#readme"
+  "homepage": "https://github.com/andresdevr/bibliolens#readme",
+  "devDependencies": {
+    "electron": "^7.1.9"
+  }
 }

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Añadir registro</title>
+        <script src="../engines/addBook.js"></script>
+    </head>
+    <body>
+        <form name="registro" onsubmit="getData()">
+            <input type="text" name="titulo" id="titulo" placeholder="titulo">
+            <input type="text" name="autor" id="autor" placeholder="autor">
+            <input type="text" name="genero" id="genero" placeholder="genero">
+            <input type="number" min="1600" id="anio">
+            <input type="text" id="editorial" placeholder="editorial">
+            <input type="number" id="cantidad" placeholder="cantidad">
+            <button type="submit">Registrar</button>
+            <button type="reset">limpiar</button>
+            </input>
+        </form>   
+    </body>
+</html>

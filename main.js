@@ -16,7 +16,7 @@ function createWindow ()
     )
 
   // y carga el  index.html de la aplicación.
-  win.loadFile('views/index.html')
+  win.loadFile('views/addBook.html')
   
 }
 

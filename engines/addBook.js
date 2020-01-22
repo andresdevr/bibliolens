@@ -1,3 +1,7 @@
+let {Sequelize, Model, DataTypes} = require('sequelize');
+let sequelize = new Sequelize('sqlite:../database/registers.sqlite');
+
+
 function getData()
 {
     var data = document.forms["registro"];
@@ -8,5 +12,11 @@ function getData()
     var editorial = data["editorial"].value;
     var cantidad = data["cantidad"].value;
 
-    
+    for (var i=0; i<cantidad; i++)
+    {
+        //crear registros
+    }
+
+    sequelize.authenticate()
+    console.log("ef");
 }

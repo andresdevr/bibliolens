@@ -1,5 +1,6 @@
-let {Sequelize, Model, DataTypes} = require('sequelize');
-let sequelize = new Sequelize('sqlite:../database/registers.sqlite');
+const {Sequelize, Model, DataTypes} = require('sequelize');
+const sequelize = new Sequelize('sqlite:../database/registers.sqlite');
+const Book = require('../models/bookModel.js');
 
 
 function getData()
@@ -17,6 +18,11 @@ function getData()
         //crear registros
     }
 
-    sequelize.authenticate()
-    console.log("ef");
+    sequelize.authenticate();
+    sequelize.sync();
+    sequelize.close();
+
+
 }
+
+

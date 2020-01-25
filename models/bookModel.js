@@ -1,53 +1,23 @@
 const {Sequelize, Model, DataTypes} = require('sequelize');
-const sequelize = new Sequelize('sqlite:../database/registers.sqlite');
-
-
-class Book extends Sequelize.Model {}
-
-Book.init
+const sequelize = new Sequelize
 (
     {
-        nombre:
-        {
-            type: Sequelize.TEXT,
-            allowNull: false
-        },
-        autor:
-        {
-            type: Sequelize.TEXT,
-            allowNull: false,
-        },
-        anio:
-        {
-            type: Sequelize.INTEGER,
-            allowNull: true,
-            validate:
-            {
-                min: 1599
-            }
-        },
-        genero:
-        {
-            type: Sequelize.INTEGER,
-            allowNull: true,
-            validate:
-            {
-                inIn: [['epico', 'dramatico', 'didactico']]
-            }
-        },
-        editorial:
-        {
-            type: Sequelize.STRING,
-            allowNull: true
-        }
-    },
-    {
-        sequelize,
-        modelName: 'Book'
+        dialect: 'sqlite',
+        storage: __dirname + '\\..\\database\\database.sqlite'
     }
 );
 
+
+
+var Book = sequelize.define('Libro',
+{
+    titulo: Sequelize.STRING,
+    autor: Sequelize.STRING,
+    anio: Sequelize.INTEGER,
+    genero: Sequelize.STRING,
+    editorial: Sequelize.STRING
+});
+
+
+
 module.exports.Book = Book;
-
-
-//module.exports.nombrefncionvariableclase = fucnionvariableclase;

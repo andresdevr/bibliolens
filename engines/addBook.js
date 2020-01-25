@@ -1,6 +1,11 @@
 const {Sequelize, Model, DataTypes} = require('sequelize');
-const sequelize = new Sequelize('sqlite:../database/registers.sqlite');
-const Book = require('../models/bookModel.js');
+const sequelize = new Sequelize
+(
+    {
+        dialect: 'sqlite',
+        storage: __dirname + '\\..\\database\\database.sqlite'
+    }
+);
 
 
 function getData()
@@ -13,15 +18,7 @@ function getData()
     var editorial = data["editorial"].value;
     var cantidad = data["cantidad"].value;
 
-    for (var i=0; i<cantidad; i++)
-    {
-        //crear registros
-    }
-
-    sequelize.authenticate();
-    sequelize.sync();
-    sequelize.close();
-
+    
 
 }
 

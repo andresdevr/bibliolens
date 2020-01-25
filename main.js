@@ -1,5 +1,4 @@
 const { app, BrowserWindow } = require('electron')
-
 function createWindow () 
 {
     // Crea la ventana del navegador.
@@ -15,8 +14,8 @@ function createWindow ()
         }
     )
 
-  // y carga el  index.html de la aplicación.
-  win.loadFile('views/addBook.html')
+  // y carga la configuracion de la Db de la aplicación.
+  win.loadFile('views/configDb.html')
   
 }
 

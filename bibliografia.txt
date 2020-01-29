@@ -61,3 +61,11 @@ martes 28 de enero del 2020
     https://www.w3schools.com/jsref/event_onchange.asp
     https://www.w3schools.com/tags/ref_eventattributes.asp
     https://www.w3schools.com/jsref/event_oninput.asp
+    https://www.w3schools.com/jsref/event_onchange.asp
+    https://www.w3schools.com/tags/ref_eventattributes.asp
+    https://www.w3schools.com/jsref/event_onreset.asp
+    https://www.w3schools.com/jsref/prop_text_required.asp
+    https://stackoverflow.com/questions/3955229/remove-all-child-elements-of-a-dom-node-in-javascript
+    https://www.geeksforgeeks.org/remove-all-the-child-elements-of-a-dom-node-in-javascript
+    https://www.abeautifulsite.net/adding-and-removing-elements-on-the-fly-using-javascript
+    https://stackoverflow.com/questions/5656392/how-to-create-input-type-text-dynamically

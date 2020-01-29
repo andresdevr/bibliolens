@@ -5,8 +5,8 @@ function createWindow ()
     let win = new BrowserWindow
     (
         {
-            width: 800,
-            height: 600,
+            width: 1000,
+            height: 800,
             webPreferences: 
             {
                 nodeIntegration: true
@@ -15,7 +15,7 @@ function createWindow ()
     )
 
   // y carga la configuracion de la Db de la aplicación.
-  win.loadFile('views/configDb.html')
+  win.loadFile('views/addBook.html')
   
 }
 

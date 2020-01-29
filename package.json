@@ -6,7 +6,6 @@
   "scripts": {
     "test": "start",
     "start": "electron .",
-    "rebuild": "electron-rebuild -f -w sqlite3",
     "postinstall": "install-app-deps"
   },
   "repository": {

@@ -1,0 +1,63 @@
+jueves 16 de enero del 2020
+    https://electronjs.org/docs/tutorial/quick-start
+    https://electronjs.org/docs/tutorial/first-app
+    https://www.whatsapp.com/business/api
+    https://www.whatsapp.com/business
+
+viernes 17 de enero del 2020
+    https://medium.com/@abulka/electron-python-4e8c807bfa5e
+
+sabado 18 de enero del 2020
+    https://medium.com/@abulka/electron-python-4e8c807bfa5e
+
+domingo 19 de enero del 2020
+    https://git-scm.com/docs/gitignore
+    https://swcarpentry.github.io/git-novice-es/06-ignore/
+    https://stackoverflow.com/questions/58451650/pip-no-longer-working-after-update-error-module-object-is-not-callable
+    https://phoenixnap.com/kb/install-pip-windows
+
+lunes 20 de enero del 2020
+    https://riptutorial.com/es/sequelize-js
+    https://riptutorial.com/es/sequelize-js/example/16726/instalar-los-modulos-necesarios-
+    https://riptutorial.com/es/sequelize-js/topic/9002/modificar-atributos-en-antes-de-crear-gancho
+    https://riptutorial.com/Download/sequelize-js-es.pdf
+    https://riptutorial.com/es/sequelize-js/topic/4756/configuracion---instalacion
+    https://riptutorial.com/es/sequelize-js/example/21790/para-el-paquete-sqlite-en-nw-js
+    https://sequelize.org/
+    https://sequelize.org/v5/
+    http://blog.cinan.sk/2018/02/22/integrate-native-node-dot-js-modules-into-an-electron-app-1-slash-2/
+    https://www.npmjs.com/package/electron-rebuild
+    https://electronjs.org/docs/tutorial/using-native-node-modules
+
+martes 21 de enero del 2020
+    https://es.stackoverflow.com/questions/26568/mezclar-contenido-de-archivos-en-nodejs
+    https://living-sun.com/es/nodejs/590453-nodejs-is-there-a-deploy-module-could-merge-javascript-file-and-minify-them-nodejs-compression-minify-web-deployment.html
+    https://nodejs.org/en/knowledge/getting-started/what-is-require/
+    https://stackabuse.com/how-to-use-module-exports-in-node-js/
+
+jueves 23 de enero del 2020
+    https://developers.google.com/gmail/api/quickstart/nodejs
+    https://developers.google.com/gmail
+    https://developers.google.com/gmail/api
+
+viernes 24 de enero del 2020
+    https://sequelize.org/v5/manual/dialects.html
+    https://sequelize.org/v5/manual/getting-started.html#note--setting-up-sqlite
+    https://sequelize.org/v5/manual/data-types.html
+    https://stackoverflow.com/questions/31765427/navigate-between-pages-in-electron-app
+    https://stackoverflow.com/questions/3846935/how-can-i-change-the-current-url
+    https://sqlitebrowser.org/blog/portableapp-for-3-11-2-release-now-available/
+    https://sequelize.org/v5/manual/getting-started
+    https://sequelize.org/v5/
+    https://www.electronjs.org/docs/api/app
+    https://stackoverflow.com/questions/43314039/how-to-close-electron-app-via-javascript
+    https://www.w3schools.com/jsref/event_onload.asp
+
+sabado 25 de enero
+    https://www.electronjs.org/docs/api/app
+
+martes 28 de enero del 2020
+    https://developer.mozilla.org/es/docs/Web/API/Document/createElement
+    https://www.w3schools.com/jsref/event_onchange.asp
+    https://www.w3schools.com/tags/ref_eventattributes.asp
+    https://www.w3schools.com/jsref/event_oninput.asp

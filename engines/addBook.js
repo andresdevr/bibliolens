@@ -35,7 +35,9 @@ function addInput()
         inputs.push(document.createElement("input"));
         inputs[i].type = "text"; //asigna el tipo de input text
         inputs[i].placeholder = "id " + (i + 1); //colocal el placeholder al input
+        inputs[i].required = true; //indica como necesario el input
         parent.appendChild(inputs[i]); //añade el modulo al archivo html
+
     }
 
 }

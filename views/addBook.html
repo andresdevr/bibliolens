@@ -8,16 +8,18 @@
         <script src="../engines/addBook.js"></script>
     </head>
     <body>
-        <form name="registro" onsubmit="getData()">
-            <input type="text" name="titulo" id="titulo" placeholder="titulo">
-            <input type="text" name="autor" id="autor" placeholder="autor">
+        <form name="registro" onsubmit="getData()" onreset="addInput()">
+            <input type="text" name="titulo" id="titulo" placeholder="titulo" required>
+            <input type="text" name="autor" id="autor" placeholder="autor" required>
             <input type="text" name="genero" id="genero" placeholder="genero">
             <input type="number" min="1600" id="anio">
             <input type="text" id="editorial" placeholder="editorial">
-            <input type="number" id="cantidad" placeholder="cantidad" oninput="addInput()"> 
+            <input type="number" id="cantidad" placeholder="cantidad" oninput="addInput()" min="1" required> 
+            
             <div id="ids">
                 <!--Aqui se añaden los inputs mediante js-->
             </div>
+            
             <button type="submit">Registrar</button>
             <button type="reset">limpiar</button>
             </input>

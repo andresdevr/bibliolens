@@ -23,18 +23,19 @@ function getData()
 
 function addInput()
 {
-    var libros = document.forms["registro"].elements["cantidad"].value;
-    var parent = document.getElementById("ids");
+    var libros = document.forms["registro"].elements["cantidad"].value; //obtiene el total de libros a registrar
+    var parent = document.getElementById("ids"); //obtiene el div padre que contendra los inputs, su id es ids
 
-    while(parent.firstChild)
-        parent.removeChild(parent.firstChild);
+    while(parent.firstChild) //mientras tenga primer nodo hijo el div
+        parent.removeChild(parent.firstChild); //remueve el primer nodo hijo del div 
 
-    for (var i=0; i < libros; i++)
+    for (var i=0; i < libros; i++) //ciclo para añadir atributos a cada input
     {
+        //aqui se crean los nodos
         inputs.push(document.createElement("input"));
-        inputs[i].type = "text";
-        inputs[i].placeholder = "id " + (i + 1);
-        parent.appendChild(inputs[i]);
+        inputs[i].type = "text"; //asigna el tipo de input text
+        inputs[i].placeholder = "id " + (i + 1); //colocal el placeholder al input
+        parent.appendChild(inputs[i]); //añade el modulo al archivo html
     }
 
 }

@@ -7,18 +7,89 @@ const sequelize = new Sequelize
     }
 );
 
-var inputs = new Array();
+var Book = sequelize.define('Book', //tabla Book
+{
+    //atributos de Book
+    id:
+    {
+        type: DataTypes.INTEGER,
+        primaryKey: true,
+        allowNull: false
+    },
+    titulo:
+    {
+        type: DataTypes.STRING,
+        allowNull: false
+    },
+    autor:
+    {
+        type: DataTypes.STRING,
+        allowNull: true
+    },
+    anio:
+    {
+        type: DataTypes.INTEGER,
+        allowNull: true
+    },
+    genero:
+    {
+        type: DataTypes.STRING,
+        allowNull: true
+    },
+    editorial:
+    {
+        type: DataTypes.STRING,
+        allowNull: true
+    },
+    contenido:
+    {
+        type: DataTypes.TEXT,
+        allowNull: true
+    },
+    disponible:
+    {
+        type: DataTypes.BOOLEAN
+    }
+
+    //fin de los atributos de Book
+});
+
+var _inputs = new Array();
 
 function getData()
 {
     var data = document.forms["registro"];
-    var titulo = data["titulo"].value;
-    var autor = data["autor"].value;
-    var anio = data["anio"].value;
-    var genero = data["genero"].value;
-    var editorial = data["editorial"].value;
+    var _titulo = data["titulo"].value;
+    var _autor = data["autor"].value;
+    var _anio = data["anio"].value;
+    var _genero = data["genero"].value;
+    var _editorial = data["editorial"].value;
     var cantidad = data["cantidad"].value;
+    for (var i=0; i < cantidad; i++)
+    {
+        console.log("id: " + parseInt(_inputs[i].value) + 
+                    " titulo: " + _titulo + 
+                    " autor: " + _autor + 
+                    " anio: " + parseInt(_anio) + 
+                    " genero: " + _genero + 
+                    " editorial: " + _editorial +
+                    " contenido: " + null +
+                    " disponible: " + true);
+        Book.create
+        (
+            {
+                id: parseInt(_inputs[i].value),
+                titulo: _titulo,
+                autor: _autor,
+                anio: parseInt(_anio),
+                genero: _genero,
+                editorial: _editorial,
+                contenido: null,
+                disponible: true   
+            }
+        );
 
+    }
 }
 
 function addInput()
@@ -32,13 +103,12 @@ function addInput()
     for (var i=0; i < libros; i++) //ciclo para añadir atributos a cada input
     {
         //aqui se crean los nodos
-        inputs.push(document.createElement("input"));
-        inputs[i].type = "text"; //asigna el tipo de input text
-        inputs[i].placeholder = "id " + (i + 1); //colocal el placeholder al input
-        inputs[i].required = true; //indica como necesario el input
-        parent.appendChild(inputs[i]); //añade el modulo al archivo html
+        _inputs.push(document.createElement("input"));
+        _inputs[i].type = "text"; //asigna el tipo de input text
+        _inputs[i].placeholder = "id " + (i + 1); //colocal el placeholder al input
+        _inputs[i].required = true; //indica como necesario el input
+        parent.appendChild(_inputs[i]); //añade el modulo al archivo html
 
     }
 
 }
-

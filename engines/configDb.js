@@ -20,33 +20,45 @@ function createDb()
             //atributos de Book
             id:
             {
-                type: DataTypes.STRING,
-                primaryKey: true
+                type: DataTypes.INTEGER,
+                primaryKey: true,
+                allowNull: false
             },
             titulo:
             {
-                type: DataTypes.STRING
+                type: DataTypes.STRING,
+                allowNull: false
             },
             autor:
             {
-                type: DataTypes.STRING
+                type: DataTypes.STRING,
+                allowNull: true
             },
             anio:
             {
-                type: DataTypes.INTEGER
+                type: DataTypes.INTEGER,
+                allowNull: true
             },
             genero:
             {
-                type: DataTypes.STRING
+                type: DataTypes.STRING,
+                allowNull: true
             },
             editorial:
             {
-                type: DataTypes.STRING
+                type: DataTypes.STRING,
+                allowNull: true
             },
             contenido:
             {
-                type: DataTypes.TEXT
+                type: DataTypes.TEXT,
+                allowNull: true
+            },
+            disponible:
+            {
+                type: DataTypes.BOOLEAN
             }
+
             //fin de los atributos de Book
         });
         //definir mas Modelos debajo
@@ -67,3 +79,4 @@ function createDb()
         app.quit(); //cierra la aplicacion cuando ocurre un fallo de conexion
     });
 }
+

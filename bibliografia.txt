@@ -70,7 +70,7 @@ martes 28 de enero del 2020
     https://www.abeautifulsite.net/adding-and-removing-elements-on-the-fly-using-javascript
     https://stackoverflow.com/questions/5656392/how-to-create-input-type-text-dynamically
 
-jueves 31 de enero
+viernes 31 de enero del 2020
 
     https://the-echoplex.net/flexyboxes/
     https://linearicons.com/free
@@ -87,3 +87,8 @@ jueves 31 de enero
     https://stackoverflow.com/questions/49582728/electronjs-please-install-sqlite3-package-manually
     https://medium.com/@worldtechmakers/tips-para-maquetar-una-p%C3%A1gina-web-bc6b6788be1
     https://www.ibm.com/developerworks/ssa/web/tutorials/wa-html5/index.html
+    https://sequelize.org/v5/manual/getting-started.html
+    https://www.geeksforgeeks.org/javascript-parseint-with-examples/
+    https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/parseInt
+    https://sequelize.org/v5/manual/dialects.html
+    https://sequelize.org/v5/manual/models-definition.html

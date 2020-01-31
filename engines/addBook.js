@@ -7,6 +7,7 @@ const sequelize = new Sequelize
     }
 );
 
+//cambiar en un futuro para la reutilizacion de codigo
 var Book = sequelize.define('Book', //tabla Book
 {
     //atributos de Book
@@ -58,15 +59,19 @@ var _inputs = new Array();
 
 function getData()
 {
-    var data = document.forms["registro"];
-    var _titulo = data["titulo"].value;
+    var data = document.forms["registro"]; //obtiene el formulario registro
+    //del formulario obtiene la siguiente informacion
+    var _titulo = data["titulo"].value; 
     var _autor = data["autor"].value;
     var _anio = data["anio"].value;
     var _genero = data["genero"].value;
     var _editorial = data["editorial"].value;
     var cantidad = data["cantidad"].value;
+
+    //realiza un registro por cada libro(distitno ID)
     for (var i=0; i < cantidad; i++)
     {
+        //imprime que datos se guardaran en la Db
         console.log("id: " + parseInt(_inputs[i].value) + 
                     " titulo: " + _titulo + 
                     " autor: " + _autor + 
@@ -75,16 +80,18 @@ function getData()
                     " editorial: " + _editorial +
                     " contenido: " + null +
                     " disponible: " + true);
-        Book.create
+
+        Book.create //este metodo del modelo agregra registros a la Db
         (
             {
-                id: parseInt(_inputs[i].value),
+                //atributos del nuevo registro
+                id: parseInt(_inputs[i].value), //de un string, convierte a integer
                 titulo: _titulo,
                 autor: _autor,
-                anio: parseInt(_anio),
+                anio: parseInt(_anio), //de un string, convierte a integer
                 genero: _genero,
                 editorial: _editorial,
-                contenido: null,
+                contenido: null, //este campo se llenara con script de python
                 disponible: true   
             }
         );

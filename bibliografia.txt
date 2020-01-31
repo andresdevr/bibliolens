@@ -69,3 +69,21 @@ martes 28 de enero del 2020
     https://www.geeksforgeeks.org/remove-all-the-child-elements-of-a-dom-node-in-javascript
     https://www.abeautifulsite.net/adding-and-removing-elements-on-the-fly-using-javascript
     https://stackoverflow.com/questions/5656392/how-to-create-input-type-text-dynamically
+
+jueves 31 de enero
+
+    https://the-echoplex.net/flexyboxes/
+    https://linearicons.com/free
+    https://www.youtube.com/watch?v=6xfhD0t5IdU&t=397s
+    https://www.freelogoservices.com/es
+    https://www.canva.com/es_mx/aprende/50-paletas-colores-visualmente-impactantes-que-inspiran/
+    https://github.com/anacoelhovicente/tangerine
+    https://www.youtube.com/results?search_query=flexbox+cc3
+    https://www.w3schools.com/cssref/pr_background-attachment.asp
+    https://www.awwwards.com/las-20-mejores-tipografias-de-google-fonts.html
+    https://stackoverflow.com/questions/55340843/error-please-install-pg-package-manually-when-trying-to-run-npm-run-servede
+    https://sequelize.org/master/class/lib/errors/connection-error.js~ConnectionError.html
+    https://exceptionshub.com/webpack-error-please-install-sqlite3-package-manually.html/amp
+    https://stackoverflow.com/questions/49582728/electronjs-please-install-sqlite3-package-manually
+    https://medium.com/@worldtechmakers/tips-para-maquetar-una-p%C3%A1gina-web-bc6b6788be1
+    https://www.ibm.com/developerworks/ssa/web/tutorials/wa-html5/index.html

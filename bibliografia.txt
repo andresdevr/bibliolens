@@ -92,3 +92,13 @@ viernes 31 de enero del 2020
     https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/parseInt
     https://sequelize.org/v5/manual/dialects.html
     https://sequelize.org/v5/manual/models-definition.html
+
+lunes 03 de febrero del 2020
+
+    https://lenguajecss.com/p/css/propiedades/flexbox
+    http://anacoelhovicente.github.io/tangerine/example/
+    https://www.campusmvp.es/recursos/post/bibliotecas-de-animaciones-con-css-y-javascript.aspx
+    https://developer.mozilla.org/es/docs/Web/CSS/CSS_Animations/Usando_animaciones_CSS
+    http://ignaciogutierrez.cl/guia-flexbox-desde-cero/
+    https://blog.hubspot.es/marketing/tipografias-para-web
+    https://www.jimdo.com/es/2015/02/10/psicolog%C3%ADa-del-color-en-el-dise%C3%B1o-web-parte-1/

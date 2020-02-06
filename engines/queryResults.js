@@ -61,5 +61,21 @@ function getQuery()
 {
     var results = document.getElementById("results");
     window.alert("");
-
+    var Books = Book.findAll();
+    Books.then(
+        books =>
+        {
+            for(var i=0; i < books.length; i++)
+            {
+                console.log("id: " + books[i].id +
+                            " titulo: " + books[i].titulo +
+                            " autor: " + books[i].autor +
+                            " anio: " + books[i].anio +
+                            " genero: " + books[i].genero +
+                            " editorial: " + books[i].editorial +
+                            " contenido: " + books[i].contenido +
+                            " diponible: " + books[i].disponible);
+            }
+        }
+    )
 }

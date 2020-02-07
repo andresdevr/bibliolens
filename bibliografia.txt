@@ -71,7 +71,6 @@ martes 28 de enero del 2020
     https://stackoverflow.com/questions/5656392/how-to-create-input-type-text-dynamically
 
 viernes 31 de enero del 2020
-
     https://the-echoplex.net/flexyboxes/
     https://linearicons.com/free
     https://www.youtube.com/watch?v=6xfhD0t5IdU&t=397s
@@ -94,7 +93,6 @@ viernes 31 de enero del 2020
     https://sequelize.org/v5/manual/models-definition.html
 
 lunes 03 de febrero del 2020
-
     https://lenguajecss.com/p/css/propiedades/flexbox
     http://anacoelhovicente.github.io/tangerine/example/
     https://www.campusmvp.es/recursos/post/bibliotecas-de-animaciones-con-css-y-javascript.aspx
@@ -102,3 +100,14 @@ lunes 03 de febrero del 2020
     http://ignaciogutierrez.cl/guia-flexbox-desde-cero/
     https://blog.hubspot.es/marketing/tipografias-para-web
     https://www.jimdo.com/es/2015/02/10/psicolog%C3%ADa-del-color-en-el-dise%C3%B1o-web-parte-1/
+
+martes 04 de febrero del 2020
+    https://sequelize.org/v5/manual/getting-started.html
+    https://sequelize.org/v5/manual/instances.html
+    https://sequelize.org/v5/manual/querying.html
+    https://sequelize.org/v5/
+
+jueves 06 de febrero del 2020
+    https://stackoverflow.com/questions/2113050/how-to-conclude-your-merge-of-a-file/2113068
+    https://www.w3schools.com/jsref/met_document_createtextnode.asp
+    https://developer.mozilla.org/es/docs/Web/JavaScript/Guide/Funciones

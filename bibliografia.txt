@@ -111,3 +111,25 @@ jueves 06 de febrero del 2020
     https://stackoverflow.com/questions/2113050/how-to-conclude-your-merge-of-a-file/2113068
     https://www.w3schools.com/jsref/met_document_createtextnode.asp
     https://developer.mozilla.org/es/docs/Web/JavaScript/Guide/Funciones
+
+martes 11 de febrero del 2020
+    https://stackoverflow.com/questions/35445849/sequelize-findone-latest-entry
+    https://www.tutorialspoint.com/how-to-convert-a-string-into-integer-in-javascript
+    https://sequelize.org/v5/manual/querying.html
+    https://sequelize.org/v5/
+    https://deideaaapp.org/como-enviar-parametros-entre-documentos-html-usando-javascript/&usg=AFQjCNExnGw7k-ajMV6Gk3aQNKy_0h2iIw
+    https://www.electronjs.org/apps/themebuilder&usg=AFQjCNF_3bFNuAfwXJHlIA-_H3UXV_rWxQ
+    https://github.com/LanceGin/electron-apps/tree/master/apps/themebuilder&usg=AFQjCNFgUmmZhHMSRLFPJIfs7MD41PPR9Q
+    https://www.ryadel.com/en/electron-jquery-bootstrap-project-add-npm/amp/&usg=AFQjCNErskvksMMWWw_bueMMjYUE9vRiWw
+    https://www.ryadel.com/en/electron-jquery-bootstrap-project-add-npm/&usg=AFQjCNGfXYQwm__5GrNarFN8YdGRhCgbmQ
+    https://medium.com/%40sharadghimire5551/getting-started-with-three-js-and-electron-js-9ae49b1d3f59&usg=AFQjCNFWaFufDl7a3LV-hbBHejgXFXy7sQ
+    https://discourse.threejs.org/t/simple-model-viewer-using-three-js-in-electron/2926&usg=AFQjCNGt2y-9dHAEZtl-8hyFXXjz5SBRKw
+    https://discourse.threejs.org/t/simple-model-viewer-using-three-js-in-electron/2926/2&usg=AFQjCNF_lxYdXfDBE1O03rhRJONX8TWQBA
+    http://www.reddit.com/comments/7xqnci&usg=AFQjCNGkDWSheI-rHQTHJfV_tCcykO6xUQ
+    https://amp.reddit.com/r/gamedev/comments/7xqnci/using_electron_and_threejs_for_desktop_game/&usg=AFQjCNFdyF1DaV5Ruytcq-6f6klVdzvhgA
+    https://deideaaapp.org/como-enviar-parametros-entre-documentos-html-usando-javascript/&usg=AFQjCNExnGw7k-ajMV6Gk3aQNKy_0h2iIw
+    https://docs.microsoft.com/es-es/powerapps/developer/model-driven-apps/pass-data-page-parameter-ribbon-actions&usg=AFQjCNFz8uxbwf-ViFkQNjiy6MmdSefKBw
+    https://programacion.net/articulo/paso_de_variables_javascript_entre_paginas_i_12&usg=AFQjCNFRSwgmJMaTBSS2aKNdHgCgjBmuNw
+    https://www.tutorialspoint.com/how-to-convert-a-string-into-integer-in-javascript&usg=AFQjCNGNBAWyUW0lBD4JEhQNwOemyroNRw
+    https://stackoverflow.com/questions/35445849/sequelize-findone-latest-entry&usg=AFQjCNGqn2Q3CZ4eOK380JFzwYUWkA9lyg
+

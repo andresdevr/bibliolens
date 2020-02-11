@@ -91,12 +91,10 @@ function createReg(_id, _titulo, _autor, _anio, _genero, _editorial, _contenido,
 {
     var results = document.getElementById("results"); //obtiene el lugar donde se colocaran las consultas
 
-    var register = document.createElement("a"); //crea un link al elemento
-    register.addEventListener("click", function() {redirectTo(_id)}, false); //agrega el evento de click para ejecutar redirecTo, con el Id del elemento
-    results.appendChild(register); //añade como hijo a results
 
     var div = document.createElement("div"); //crea una division
-    register.appendChild(div); //coloca la division dentro del link
+    div.addEventListener("click", function(){redirectTo(_id)}, false);
+    results.appendChild(div); //coloca la division dentro del link
 
     var h3 = document.createElement("h1"); //crea el titulo del libro
     div.appendChild(h3); //añade el titulo a la division
@@ -127,8 +125,9 @@ function createReg(_id, _titulo, _autor, _anio, _genero, _editorial, _contenido,
 
 
 
-
-function redirectTo(id)
+//funcion llamada cuando se hace click en un libro
+function redirectTo(id) 
 {
-    window.alert(id);
+    var url = __dirname + "\\bookInformation.html" + "?id=" + id; //genera una url con args
+    location.href = url; //cambia la direccion actual a la url creada
 }

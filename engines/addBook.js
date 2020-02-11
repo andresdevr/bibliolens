@@ -1,3 +1,4 @@
+const WebCamera = require ("webcamjs");
 const {Sequelize, Model, DataTypes} = require('sequelize');
 const sequelize = new Sequelize
 (
@@ -117,5 +118,14 @@ function addInput()
         parent.appendChild(_inputs[i]); //añade el modulo al archivo html
 
     }
+
+}
+
+
+function startCam()
+{
+    WebCamera.attach('#cam');
+    console.log("camara iniciada");
+
 
 }

@@ -6,8 +6,9 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Añadir registro</title>
         <script src="../engines/addBook.js"></script>
+        <link rel="stylesheet" href="./Styles/addBook.css">
     </head>
-    <body>
+    <body onload="startCam()">
         <form name="registro" onsubmit="getData()" onreset="addInput()">
             <input type="text" name="titulo" id="titulo" placeholder="titulo" required>
             <input type="text" name="autor" id="autor" placeholder="autor" required>
@@ -20,6 +21,10 @@
                 <!--Aqui se añaden los inputs mediante js-->
             </div>
             
+            <div id="cam">
+                <!--Aqui se añade la camara mediante js-->
+            </div>
+
             <button type="submit">Registrar</button>
             <button type="reset">limpiar</button>
             </input>

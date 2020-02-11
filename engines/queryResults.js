@@ -92,6 +92,7 @@ function createReg(_id, _titulo, _autor, _anio, _genero, _editorial, _contenido,
     var results = document.getElementById("results"); //obtiene el lugar donde se colocaran las consultas
 
     var register = document.createElement("a"); //crea un link al elemento
+    register.addEventListener("click", function() {redirectTo(_id)}, false); //agrega el evento de click para ejecutar redirecTo, con el Id del elemento
     results.appendChild(register); //añade como hijo a results
 
     var div = document.createElement("div"); //crea una division
@@ -122,4 +123,12 @@ function createReg(_id, _titulo, _autor, _anio, _genero, _editorial, _contenido,
     var genero = document.createTextNode(_genero); //crea el genero al registro
     h6ge.appendChild(genero); //añade la informacion al elemento h6
 
+}
+
+
+
+
+function redirectTo(id)
+{
+    window.alert(id);
 }

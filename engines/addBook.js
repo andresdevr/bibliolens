@@ -127,5 +127,22 @@ function startCam()
     WebCamera.attach('#cam');
     console.log("camara iniciada");
 
+    WebCamera.on('load', startReading);
 
+}
+
+function startReading()
+{
+    setInterval(snap, 250);
+}
+
+function snap()
+{
+    var image = document.getElementById('result');
+    WebCamera.snap(
+        function(uri)
+        {
+            image.src =  uri;
+        }
+    )
 }

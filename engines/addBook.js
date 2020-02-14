@@ -1,3 +1,4 @@
+const {PythonShell} = require("python-shell");
 const WebCamera = require ("webcamjs");
 const {Sequelize, Model, DataTypes} = require('sequelize');
 const sequelize = new Sequelize
@@ -7,6 +8,7 @@ const sequelize = new Sequelize
         storage: __dirname + '\\..\\database\\database.sqlite'
     }
 );
+
 
 //cambiar en un futuro para la reutilizacion de codigo
 var Book = sequelize.define('Book', //tabla Book
@@ -68,6 +70,11 @@ function getData()
     var _genero = data["genero"].value;
     var _editorial = data["editorial"].value;
     var cantidad = data["cantidad"].value;
+
+    
+
+
+
 
     //realiza un registro por cada libro(distitno ID)
     for (var i=0; i < cantidad; i++)
@@ -139,10 +146,27 @@ function startReading()
 function snap()
 {
     var image = document.getElementById('result');
+
+    
+
     WebCamera.snap(
         function(uri)
         {
-            image.src =  uri;
+            const options = 
+            {
+                mode: 'text',
+                encoding: 'utf8',
+                pythonOptions: ['-u'],
+                scriptPath: './engines/OCR',
+                args: [uri]
+            };
+
+            var pythonCall = new PythonShell("ocr.py", options);
+            pythonCall.on("message", function(message)
+            {
+                console.log(message);
+            });
         }
     )
+    
 }

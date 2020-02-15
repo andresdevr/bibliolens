@@ -129,30 +129,34 @@ function addInput()
 }
 
 
-function startCam()
+function startCam() //cuando la pagina carga esta funcion es llamada
 {
-    WebCamera.attach('#cam');
-    console.log("camara iniciada");
+    WebCamera.attach('#cam'); //inserta la camara en el div con id=cam
+    WebCamera.on('err', function() //en caso de no cargar la camara llama a esta funcion
+    {
+        window.alert("No se puede acceder a la camara, llamar a soporte"); //crea una alerta con ese mensaje
+        location.href = "./index.html"; //cambia la pagina a mostrar
+    });
+    WebCamera.on('load', startReading); //si carga bien la camara llama a startReading
 
-    WebCamera.on('load', startReading);
 
 }
 
-function startReading()
+function startReading() //funcion que crea un itervalo de llamada a snap
 {
-    setInterval(snap, 250);
+    setInterval(snap, 2500); //cada x segundos llama a la funcion snap
 }
 
 function snap()
 {
-    var image = document.getElementById('result');
+    var image = document.getElementById('result'); //obtiene el elemento html mediante su id
 
     
 
-    WebCamera.snap(
-        function(uri)
+    WebCamera.snap( //metodo para capturar la imagen en formato uri
+        function(uri) //recibe la informacion uri
         {
-            const options = 
+            const options = //opciones de configuracion para llamar archivos python
             {
                 mode: 'text',
                 encoding: 'utf8',
@@ -161,10 +165,10 @@ function snap()
                 args: [uri]
             };
 
-            var pythonCall = new PythonShell("ocr.py", options);
-            pythonCall.on("message", function(message)
+            var pythonCall = new PythonShell("ocr.py", options); //crea una instancia del script de python
+            pythonCall.on("message", function(message) //realiza una llamada al script de python, la informacion que imprime python la recibe js mediante message
             {
-                console.log(message);
+                console.log(message); //manipulamos la informacion enviada por python
             });
         }
     )

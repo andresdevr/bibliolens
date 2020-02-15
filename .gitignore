@@ -1,5 +1,7 @@
 node_modules/
 database/
+engines/OCR/*.png
 *.sqlite
 *.sqlite3
 *.sqlite-journal
+*.db

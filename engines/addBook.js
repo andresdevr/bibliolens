@@ -1,3 +1,4 @@
+const {PythonShell} = require("python-shell");
 const WebCamera = require ("webcamjs");
 const {Sequelize, Model, DataTypes} = require('sequelize');
 const sequelize = new Sequelize
@@ -7,6 +8,7 @@ const sequelize = new Sequelize
         storage: __dirname + '\\..\\database\\database.sqlite'
     }
 );
+
 
 //cambiar en un futuro para la reutilizacion de codigo
 var Book = sequelize.define('Book', //tabla Book
@@ -69,6 +71,11 @@ function getData()
     var _editorial = data["editorial"].value;
     var cantidad = data["cantidad"].value;
 
+    
+
+
+
+
     //realiza un registro por cada libro(distitno ID)
     for (var i=0; i < cantidad; i++)
     {
@@ -122,10 +129,48 @@ function addInput()
 }
 
 
-function startCam()
+function startCam() //cuando la pagina carga esta funcion es llamada
 {
-    WebCamera.attach('#cam');
-    console.log("camara iniciada");
+    WebCamera.attach('#cam'); //inserta la camara en el div con id=cam
+    WebCamera.on('err', function() //en caso de no cargar la camara llama a esta funcion
+    {
+        window.alert("No se puede acceder a la camara, llamar a soporte"); //crea una alerta con ese mensaje
+        location.href = "./index.html"; //cambia la pagina a mostrar
+    });
+    WebCamera.on('load', startReading); //si carga bien la camara llama a startReading
 
 
+}
+
+function startReading() //funcion que crea un itervalo de llamada a snap
+{
+    setInterval(snap, 2500); //cada x segundos llama a la funcion snap
+}
+
+function snap()
+{
+    var image = document.getElementById('result'); //obtiene el elemento html mediante su id
+
+    
+
+    WebCamera.snap( //metodo para capturar la imagen en formato uri
+        function(uri) //recibe la informacion uri
+        {
+            const options = //opciones de configuracion para llamar archivos python
+            {
+                mode: 'text',
+                encoding: 'utf8',
+                pythonOptions: ['-u'],
+                scriptPath: './engines/OCR',
+                args: [uri]
+            };
+
+            var pythonCall = new PythonShell("ocr.py", options); //crea una instancia del script de python
+            pythonCall.on("message", function(message) //realiza una llamada al script de python, la informacion que imprime python la recibe js mediante message
+            {
+                console.log(message); //manipulamos la informacion enviada por python
+            });
+        }
+    )
+    
 }

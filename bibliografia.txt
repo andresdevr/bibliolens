@@ -133,3 +133,32 @@ martes 11 de febrero del 2020
     https://www.tutorialspoint.com/how-to-convert-a-string-into-integer-in-javascript&usg=AFQjCNGNBAWyUW0lBD4JEhQNwOemyroNRw
     https://stackoverflow.com/questions/35445849/sequelize-findone-latest-entry&usg=AFQjCNGqn2Q3CZ4eOK380JFzwYUWkA9lyg
 
+viernes 14 de febrero del 2020
+    https://github.com/tesseract-ocr/tessdata/blob/master/spa.traineddata
+    https://github.com/UB-Mannheim/tesseract/wiki
+    http://scikit-image.org/docs/dev/api/skimage.io.html#skimage.io.imread
+    https://github.com/tesseract-ocr/tessdata
+    https://github.com/tesseract-ocr/tesseract/wiki
+    https://github.com/tesseract-ocr/tessdoc
+    https://github.com/tesseract-ocr/tesseract/wiki/Command-Line-Usage#tsv-output-currently-available-in-305-dev-in-master-branch-on-github
+    https://pypi.org/project/pytesseract/
+    https://css-tricks.com/data-uris/
+    https://stackoverflow.com/questions/6485790/numpy-array-to-base64-and-back-to-numpy-array-python
+    https://scikit-image.org/docs/dev/api/skimage.io.html#skimage.io.imread
+    https://www.kaggle.com/getting-started/52230
+    https://www.reddit.com/r/learnpython/comments/6lqsrp/converting_a_dataurl_to_numpy_array/
+    https://pypi.org/project/python-datauri/
+    https://stackoverflow.com/questions/19395649/python-pil-create-and-save-image-from-data-uri
+    https://tesseract-ocr.github.io/tessdoc/Home.html
+    https://www.w3schools.com/jsref/met_win_setinterval.asp
+    https://nodejs.dokry.com/252/node-js-eliminar-archivo.html&usg=AFQjCNEQCBDFPTW88iIxel9NmLzbAna8VQ
+    https://es.stackoverflow.com/questions/248974/eliminar-archivos-con-fs-node&usg=AFQjCNGjj_tYRYKAfvfxHVVB4TBcOssTVg
+    https://www.electronjs.org/docs/api/browser-window&usg=AFQjCNFN3QTcxWETOUJc40Bu4a3cGTKOHg
+    https://www.youtube.com/watch?v=4DrCIVS5U3Y
+    https://css-tricks.com/data-uris/&usg=AFQjCNEdmwpcDUAafeJuu7f36XxqLyjq_g
+    https://stackoverflow.com/questions/33870538/how-to-parse-data-uri-in-python/33870677&usg=AFQjCNFwt2jrZg53_75pXCs0aTZwqmy0yg
+    https://stackoverflow.com/questions/6485790/numpy-array-to-base64-and-back-to-numpy-array-python&usg=AFQjCNEZeamj4TsEihnP2iJ6mBuYlLeFiA
+    https://www.w3schools.com/jsref/met_win_setinterval.asp&usg=AFQjCNGoJLGdQ3pwE3kJC6D1MxEa3Jx3WA
+    https://www.bitdegree.org/learn/javascript-settimeout/amp&usg=AFQjCNECnZvDdeVKRjC_L8ITtfg6o3X3cw
+    https://www.bitdegree.org/learn/javascript-settimeout/amp&usg=AFQjCNECnZvDdeVKRjC_L8ITtfg6o3X3cw
+    

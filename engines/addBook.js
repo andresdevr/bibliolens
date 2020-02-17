@@ -168,7 +168,9 @@ function snap()
             var pythonCall = new PythonShell("ocr.py", options); //crea una instancia del script de python
             pythonCall.on("message", function(message) //realiza una llamada al script de python, la informacion que imprime python la recibe js mediante message
             {
-                console.log(message); //manipulamos la informacion enviada por python
+                var data = JSON.parse(message);
+                image.src = data.image;
+                console.log(data.words);
             });
         }
     )

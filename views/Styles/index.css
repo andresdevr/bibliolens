@@ -4,9 +4,16 @@
 	box-sizing: border-box;
 }
 
+@font-face{
+	font-family: 'aqua';
+	src: url(../Styles/fonts/aqua.ttf);
+}
 
-body {
-	font-family: 'Muli', sans-serif;
+#fonts{
+	font-family: 'aqua';
+}
+
+body{
 	background-color: azure;
 }
 

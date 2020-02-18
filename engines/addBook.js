@@ -144,7 +144,7 @@ function startCam() //cuando la pagina carga esta funcion es llamada
 
 function startReading() //funcion que crea un itervalo de llamada a snap
 {
-    setInterval(snap, 2500); //cada x segundos llama a la funcion snap
+    setInterval(snap, 3000); //cada x segundos llama a la funcion snap
 }
 
 function snap()

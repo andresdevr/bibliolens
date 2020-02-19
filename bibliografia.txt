@@ -161,4 +161,25 @@ viernes 14 de febrero del 2020
     https://www.w3schools.com/jsref/met_win_setinterval.asp&usg=AFQjCNGoJLGdQ3pwE3kJC6D1MxEa3Jx3WA
     https://www.bitdegree.org/learn/javascript-settimeout/amp&usg=AFQjCNECnZvDdeVKRjC_L8ITtfg6o3X3cw
     https://www.bitdegree.org/learn/javascript-settimeout/amp&usg=AFQjCNECnZvDdeVKRjC_L8ITtfg6o3X3cw
+
+martes 19 de febrero del 2020
+    https://www.base64decode.net/python-base64-b64decode
+    https://css-tricks.com/data-uris/
+    https://pypi.org/project/python-datauri/
+    https://pillow.readthedocs.io/en/stable/
+    https://pillow.readthedocs.io/en/stable/reference/Image.html
+    https://pillow.readthedocs.io/en/stable/handbook/concepts.html#concept-modes
+    https://pillow.readthedocs.io/en/stable/handbook/concepts.html#concept-modes
+    https://docs.python.org/2/library/base64.html
+    https://docs.python.org/3/library/stdtypes.html#bytes
+    https://stackoverflow.com/questions/45122994/how-to-convert-base64-string-to-a-pil-image-object
+    https://gist.github.com/ankitshekhawat/56f05d0fb0453a0cd143630ab5af5087&usg=AFQjCNFvNb02507Wjph8Dr-eUFDroXwnRQ
+    https://stackoverflow.com/questions/45122994/how-to-convert-base64-string-to-a-pil-image-object&usg=AFQjCNG80kjrfrWXOFg3RJZMlmIg9fMrMw
+    https://stackoverflow.com/questions/26070547/decoding-base64-from-post-to-use-in-pil/26085215&usg=AFQjCNH_x6v8Gt2OjmJETgtjNp-4LHNpig
+    https://www.base64decode.net/python-base64-b64decode&usg=AFQjCNFKSL6YO1YCLIfal2lX8PLwqNrwew
+    https://docs.python.org/2/library/base64.html&usg=AFQjCNG_07YXUDUznmeQG8wdsyU1bcGOSQ
+    https://docs.python.org/3/library/base64.html&usg=AFQjCNHFESG5h3mHZj7hrOOLvQGDGK478g
+    https://www.base64decode.net/python-base64-b64decode&usg=AFQjCNFKSL6YO1YCLIfal2lX8PLwqNrwew
+    https://pillow.readthedocs.io/&usg=AFQjCNE6ODwGa847ydBopzH1a7si1jk1SQ
+
     

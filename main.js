@@ -17,8 +17,6 @@ function createWindow ()
 
     win.on('closed', () =>
     {
-        fs.unlink('./engines/OCR/image.png', function(){});
-        fs.unlink('./engines/OCR/image_processed.png', function(){});
     });
 
     // y carga la configuracion de la Db de la aplicación.

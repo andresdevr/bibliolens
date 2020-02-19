@@ -1,3 +1,4 @@
+/* Configuraciones Globales */
 * {
 	padding: 0;
 	margin: 0;
@@ -14,8 +15,22 @@
 }
 
 body{
-	background-color: azure;
+	background-color: rgba(94, 245, 245, 0.924)
 }
 
+.Principal{
+	display: flex;
+	flex-flow:column nowrap;
+}
 
+/* H E A D E R */
+
+.headers{
+	
+}
+
+/* S E C T I O N */
+
+
+/* F O O T E R */
 

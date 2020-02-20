@@ -5,32 +5,51 @@
 	box-sizing: border-box;
 }
 
-@font-face{
+@font-face {
 	font-family: 'aqua';
 	src: url(../Styles/fonts/aqua.ttf);
 }
 
-#fonts{
+#fonts {
 	font-family: 'aqua';
 }
 
-body{
-	background-color: rgba(94, 245, 245, 0.924)
-}
-
-.Principal{
-	display: flex;
-	flex-flow:column nowrap;
+body {
+	background-color: rgba(0, 255, 255, 0.924);
 }
 
 /* H E A D E R */
+.container {
+	background-color: #2286a9;
+}
+.navbar {
+	background: #ffff;
+	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+	min-height: 100px;
+}
 
-.headers{
-	
+.nav-link {
+	font-size: 15px;
+	color: #807a7a;
 }
 
 /* S E C T I O N */
 
-
+.container-2 {
+	background: linear-gradient(
+			to right,
+			#807a7a,
+			#2286a9
+		);
+	min-height: 500px;
+}
 /* F O O T E R */
 
+.container-3 {
+	background: linear-gradient(
+			to right,
+			#807a7a88,
+			#1A4AAF
+		);
+	min-height: 75px;
+}

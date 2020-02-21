@@ -11,7 +11,7 @@
 }
 
 #fonts {
-	font-family: 'aqua';
+	font-family: 'aqua', sans-serif;
 }
 
 body {
@@ -19,18 +19,51 @@ body {
 }
 
 /* H E A D E R */
-.container {
-	background-color: #2286a9;
-}
 .navbar {
-	background: #ffff;
-	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+	position: fixed;
+	top: 0;
+	left: 0;
 	min-height: 100px;
+	transition: 0.5s;
+	-webkit-transition: 0.5s;
+	-moz-transition: 0.5s;
+	-ms-transition: 0.5s;
+	-o-transition: 0.5s;
+}
+.navbar img{
+	width: 80px;
+	transition: 0.5s;
+	-webkit-transition: 0.5s;
+	-moz-transition: 0.5s;
+	-ms-transition: 0.5s;
+	-o-transition: 0.5s;
 }
 
 .nav-link {
-	font-size: 15px;
+	font-size: 12.5px;
 	color: #807a7a;
+	text-transform: uppercase;
+	transition: 0.5s;
+	-webkit-transition: 0.5s;
+	-moz-transition: 0.5s;
+	-ms-transition: 0.5s;
+	-o-transition: 0.5s;
+}
+
+.nav-link:hover{
+	background: rgba(26, 73, 175, 0.5);
+	border-radius: 0.5em;
+	-webkit-border-radius: 0.5em;
+	-moz-border-radius: 0.5em;
+	-ms-border-radius: 0.5em;
+	-o-border-radius: 0.5em;
+}
+
+header{
+	width: 100%;
+	height: 75vh;
+	background: url(../Resources/Images/FONDE1.jpg);
+	background-size:cover ;
 }
 
 /* S E C T I O N */

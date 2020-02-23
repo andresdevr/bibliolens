@@ -19,70 +19,74 @@ body {
 }
 
 /* H E A D E R */
-.navbar {
-	position: fixed;
-	top: 0;
-	left: 0;
-	min-height: 100px;
-	transition: 0.5s;
-	-webkit-transition: 0.5s;
-	-moz-transition: 0.5s;
-	-ms-transition: 0.5s;
-	-o-transition: 0.5s;
-}
-.navbar img{
-	width: 80px;
-	transition: 0.5s;
-	-webkit-transition: 0.5s;
-	-moz-transition: 0.5s;
-	-ms-transition: 0.5s;
-	-o-transition: 0.5s;
-}
-
-.nav-link {
-	font-size: 12.5px;
-	color: #807a7a;
-	text-transform: uppercase;
-	transition: 0.5s;
-	-webkit-transition: 0.5s;
-	-moz-transition: 0.5s;
-	-ms-transition: 0.5s;
-	-o-transition: 0.5s;
-}
-
-.nav-link:hover{
-	background: rgba(26, 73, 175, 0.5);
-	border-radius: 0.5em;
-	-webkit-border-radius: 0.5em;
-	-moz-border-radius: 0.5em;
-	-ms-border-radius: 0.5em;
-	-o-border-radius: 0.5em;
-}
-
-header{
+header {
+	position: relative;
 	width: 100%;
-	height: 75vh;
-	background: url(../Resources/Images/FONDE1.jpg);
-	background-size:cover ;
+	min-height: 750px;
+	background-image: url(../Resources/Images/FONDE1.jpg);
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+	align-items: center;
+	transition: all 0.1s ease-in-out;
+	-webkit-transition: all 0.1s ease-in-out;
+	-moz-transition: all 0.1s ease-in-out;
+	-ms-transition: all 0.1s ease-in-out;
+	-o-transition: all 0.1s ease-in-out;
+	animation: pose 28s infinite linear;
+	-webkit-animation: pose 60s infinite linear;
 }
 
-/* S E C T I O N */
-
-.container-2 {
-	background: linear-gradient(
-			to right,
-			#807a7a,
-			#2286a9
-		);
-	min-height: 500px;
+.container {
+	margin-top: 10px;
+	padding-top: 10px;
+	background-color: #ffffff;
+	min-width: 50px;
 }
-/* F O O T E R */
 
-.container-3 {
+.navbar {
+	width: auto;
+	height: auto;
+}
+
+.navbar img {
+	width: 50px;
+}
+
+.banner {
+	height: 750px;
 	background: linear-gradient(
-			to right,
-			#807a7a88,
-			#1A4AAF
-		);
-	min-height: 75px;
+		to right,
+		#0921475b,
+		rgba(26, 69, 142, 0.4)
+	);
+}
+
+@keyframes pose{
+	0%{
+		background-image: url(../Resources/Images/FONDE1.jpg);
+	}
+	25%{
+		background-image: url(../Resources/Images/FONDE1.jpg);
+	}
+	26%{
+		background-image: url(../Resources/Images/FONDE2.jpg);
+	}
+	50%{
+		background-image: url(../Resources/Images/FONDE2.jpg);
+	}
+	51%{
+		background-image: url(../Resources/Images/FONDE3.jpg);
+	}
+	75%{
+		background-image: url(../Resources/Images/FONDE3.jpg);
+	}
+	76%{
+		background-image: url(../Resources/Images/FONDE4.jpg);
+	}
+	100%{
+		background-image: url(../Resources/Images/FONDE4.jpg);
+	}
 }

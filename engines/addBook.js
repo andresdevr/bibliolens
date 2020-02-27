@@ -139,18 +139,19 @@ function startCam() //cuando la pagina carga esta funcion es llamada
     });
     WebCamera.on('load', startReading); //si carga bien la camara llama a startReading
 
-
+    console.log("start Cam called");
 }
 
 function startReading() //funcion que crea un itervalo de llamada a snap
 {
+    console.log("start reading called");
     setInterval(snap, 3000); //cada x segundos llama a la funcion snap
 }
 
 function snap()
 {
     var image = document.getElementById('result'); //obtiene el elemento html mediante su id
-
+    console.log("snap called");
     
 
     WebCamera.snap( //metodo para capturar la imagen en formato uri

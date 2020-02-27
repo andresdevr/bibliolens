@@ -8,7 +8,7 @@ from base64 import b64encode as encode #importamos el codificador de uri
 import json #importamos json para convertir diccionarios
 from io import BytesIO #importamos entradas y salidas para leer archivo en vivo
 
-uri = sys.argv[1] #obtenemos el arguneto enviado por js(uri)
+uri = sys.argv[1] #obtenemos el argumento enviado por js(uri)
 encoded = uri.split(',', 1)[1] #extrae solo la informacion de contruccion de la uri
 
 data = decode(encoded) #decodifica la informacion de uri

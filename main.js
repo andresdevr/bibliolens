@@ -20,7 +20,7 @@ function createWindow ()
     });
 
     // y carga la configuracion de la Db de la aplicación.
-    win.loadFile('views/configDb.html')
+    win.loadFile('views/addBook.html')
   
 }
 

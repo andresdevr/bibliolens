@@ -7,23 +7,51 @@ const sequelize = new Sequelize
     }
 );
 
-class Loan extends { }
+const Book = sequelize.import('BookModel');
+const User = sequelize.import('UserModel');
 
-Loan.init
-(
-    {
-        //atributos de Loan
-        idLoan:
-        {
-            type: DataTypes.INTEGER,
-            primaryKey: true,
-            allowNull: false
-        },
-        Prestamo:
-        {
-            type: DataTypes.STRING,
-            allowNull: false
-        },
+module.exports = (sequelize, DataTypes) =>
+{
+    class Loan extends Model { }
 
-    }
-)
+    Loan.init
+    (
+        {
+            //atributos de Loan
+            idLoan:
+            {
+                type: DataTypes.INTEGER,
+                primaryKey: true,
+                allowNull: false
+            },
+            tipoPrestamo:
+            {
+                type: DataTypes.STRING,
+                allowNull: false
+            },
+            idBook:
+            {
+                type: DataTypes.INTEGER,
+                references:
+                {
+                    model: Book,
+                    key: 'idBook'
+                }
+            },
+            idUser:
+            {
+                type:DataTypes.INTEGER,
+                references:
+                {
+                    model: User,
+                    key: 'idUser'
+                }
+            }
+            //fin de los atributos de Loan
+        },
+        {
+            sequelize
+        }
+    )
+    return Loan;
+}

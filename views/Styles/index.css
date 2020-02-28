@@ -1,4 +1,9 @@
 /* Configuraciones Globales */
+html{
+	height: 100%;
+	overflow: hidden;
+}
+
 * {
 	padding: 0;
 	margin: 0;
@@ -14,18 +19,21 @@
 	font-family: 'aqua', sans-serif;
 }
 
-body {
-	background-color: rgba(0, 255, 255, 0.924);
+body{
+	perspective:1px;
+	transform-style: preserve-3d;
+	height: 100%;
+	overflow-y: scroll;
+	overflow-x: hidden;
 }
 
 /* H E A D E R */
 header {
+	box-sizing: border-box;
 	position: relative;
+	transform-style: inherit;
 	width: 100%;
 	min-height: 750px;
-	background-image: url(../Resources/Images/FONDE1.jpg);
-	background-size: cover;
-	background-position: center;
 	display: flex;
 	flex-flow: column;
 	justify-content: center;
@@ -35,9 +43,30 @@ header {
 	-moz-transition: all 0.1s ease-in-out;
 	-ms-transition: all 0.1s ease-in-out;
 	-o-transition: all 0.1s ease-in-out;
+}
+
+header, header:before{
+	background: 50% 50% / cover;
+}
+
+/* APLICAR JS */
+
+header::before{
+	position: relative;
+	background-image: url(../Resources/Images/FONDE1.jpg);
+	background-size: cover;
+	transform-origin: center center 0;
+	transform: translateZ(-1px) scale(2);
+	-webkit-transform: translateZ(-1px) scale(2);
+	-moz-transform: translateZ(-1px) scale(2);
+	-ms-transform: translateZ(-1px) scale(2);
+	-o-transform: translateZ(-1px) scale(2);
 	animation: pose 28s infinite linear;
 	-webkit-animation: pose 60s infinite linear;
+	z-index:-1;
+	min-height: 750px;
 }
+
 
 .container {
 	margin-top: 10px;
@@ -66,8 +95,6 @@ header {
 	margin: 0.5px;
 }
 
-
-
 .banner {
 	height: 750px;
 	background: linear-gradient(
@@ -77,52 +104,30 @@ header {
 	);
 }
 
+
 /* BIBLIOEARCH */
 
-.search{
-	position: relative;
-	bottom: 150px;
+.container-2{
+	width: 100%;
+	min-width: 200px;
+	
 }
 
-.card-block{
-	padding: 80px;
+/* SECTION */
+
+.main{
+	width: 100%;
+	min-height: 750px;
+	background:#1A488E
 }
 
-.Biblioearch{
-	position:absolute;
-	top:50%;
-	left:50%;
-	transform: translate(-50%,-50%);
-	-webkit-transform: translate(-50%,-50%);
-	-moz-transform: translate(-50%,-50%);
-	-ms-transform: translate(-50%,-50%);
-	-o-transform: translate(-50%,-50%);
-	background: #3B8ACA;
-	width: 75px;
-	height: 75px;
-	border-radius: 5em;
-	-webkit-border-radius: 5em;
-	-moz-border-radius: 5em;
-	-ms-border-radius: 5em;
-	-o-border-radius: 5em;
-}
+/* FOOTER */
 
-.Biblioearch-btn{
-	color:#ffffff;
-	float: right;
-	width: 45px;
-	height: 45px;
-	border-radius:50%;
-	background: #E2E1E6;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	-webkit-border-radius:50%;
-	-moz-border-radius:50%;
-	-ms-border-radius:50%;
-	-o-border-radius:50%;
+.pai{
+	width: 100%;
+	min-height:150px;
+	background: #4BB4DE;
 }
-
 
 /* BANNER DE IMAGENES (HEADER) */
 @keyframes pose{

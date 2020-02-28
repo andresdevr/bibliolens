@@ -13,9 +13,12 @@ const sequelize = new Sequelize
 const Book = sequelize.import(__dirname + '\\..\\models\\BookModel');
 
 var _inputs = new Array();
+var _interval;
 
 function getData()
 {
+    clearInterval(_interval);
+    WebCamera.reset();
     var data = document.forms["registro"]; //obtiene el formulario registro
     //del formulario obtiene la siguiente informacion
     var _titulo = data["titulo"].value; 
@@ -25,39 +28,24 @@ function getData()
     var _editorial = data["editorial"].value;
     var cantidad = data["cantidad"].value;
 
-    
-
-
-
-
     //realiza un registro por cada libro(distitno ID)
     for (var i=0; i < cantidad; i++)
     {
-        //imprime que datos se guardaran en la Db
-        console.log("id: " + parseInt(_inputs[i].value) + 
-                    " titulo: " + _titulo + 
-                    " autor: " + _autor + 
-                    " anio: " + parseInt(_anio) + 
-                    " genero: " + _genero + 
-                    " editorial: " + _editorial +
-                    " contenido: " + null +
-                    " disponible: " + true);
-
-        Book.create //este metodo del modelo agregra registros a la Db
+        //llama al metodo create con los atributos deseados en el nuevo registro
+        var book = Book.create
         (
             {
                 //atributos del nuevo registro
-                id: parseInt(_inputs[i].value), //de un string, convierte a integer
+                idBook: parseInt(_inputs[i].value), //de un string, convierte a integer
                 titulo: _titulo,
                 autor: _autor,
                 anio: parseInt(_anio), //de un string, convierte a integer
                 genero: _genero,
                 editorial: _editorial,
                 contenido: null, //este campo se llenara con script de python
-                disponible: true   
+                disponible: true
             }
         );
-
     }
 }
 
@@ -73,7 +61,7 @@ function addInput()
     {
         //aqui se crean los nodos
         _inputs.push(document.createElement("input"));
-        _inputs[i].type = "text"; //asigna el tipo de input text
+        _inputs[i].type = "number"; //asigna el tipo de input text
         _inputs[i].placeholder = "id " + (i + 1); //colocal el placeholder al input
         _inputs[i].required = true; //indica como necesario el input
         parent.appendChild(_inputs[i]); //añade el modulo al archivo html
@@ -86,28 +74,16 @@ function addInput()
 function startCam() //cuando la pagina carga esta funcion es llamada
 {
     WebCamera.attach('#cam'); //inserta la camara en el div con id=cam
-    WebCamera.on('err', function() //en caso de no cargar la camara llama a esta funcion
+    WebCamera.on('load', function()
     {
-        window.alert("No se puede acceder a la camara, llamar a soporte"); //crea una alerta con ese mensaje
-        location.href = "./index.html"; //cambia la pagina a mostrar
-    });
-    WebCamera.on('load', startReading); //si carga bien la camara llama a startReading
+        _interval = setInterval(snap, 3000); //cada x segundos llama a la funcion snap
 
-    console.log("start Cam called");
-}
-
-function startReading() //funcion que crea un itervalo de llamada a snap
-{
-    console.log("start reading called");
-    setInterval(snap, 3000); //cada x segundos llama a la funcion snap
+    }); //si carga bien la camara llama a startReading
 }
 
 function snap()
 {
     var image = document.getElementById('result'); //obtiene el elemento html mediante su id
-    console.log("snap called");
-    
-
     WebCamera.snap( //metodo para capturar la imagen en formato uri
         function(uri) //recibe la informacion uri
         {
@@ -124,8 +100,7 @@ function snap()
             pythonCall.on("message", function(message) //realiza una llamada al script de python, la informacion que imprime python la recibe js mediante message
             {
                 var data = JSON.parse(message);
-                image.src = data.image;
-                console.log(data.words);
+                console.log(data.alert);
             });
         }
     )

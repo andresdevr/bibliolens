@@ -29,7 +29,8 @@ uri = u'data:img/png;base64,' + data64.decode('utf-8') #creamos el string apropi
 dataRead = \
 {
     'image': uri,
-    'words': text
+    'words': text,
+    'alert': 'OCR called'
 }
 
 print(json.dumps(dataRead)) #imprime la informacion en formato JSON 

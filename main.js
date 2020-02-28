@@ -1,4 +1,4 @@
-const { app, BrowserWindow } = require('electron')
+const { app, BrowserWindow } = require('electron');
 const fs = require('fs');
 function createWindow () 
 {
@@ -13,15 +13,15 @@ function createWindow ()
                 nodeIntegration: true
             }
         }
-    )
+    );
 
     win.on('closed', () =>
     {
     });
 
     // y carga la configuracion de la Db de la aplicación.
-    win.loadFile('views/addBook.html')
+    win.loadFile('views/addBook.html');
   
 }
 
-app.on('ready', createWindow)
+app.on('ready', createWindow);

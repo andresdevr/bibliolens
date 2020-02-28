@@ -10,8 +10,6 @@ const sequelize = new Sequelize
 
 const Book = sequelize.import(__dirname + '\\..\\models\\BookModel');
 
-var page = 0;
-
 function getQuery()
 {
     getPage();
@@ -104,7 +102,7 @@ function getPage()
 
     if(page <= 0)
     {
-        pagination.parentNode.removeChild(previous);
+        pagination.removeChild(previous);
     }
     var actualPage = document.getElementById("actualPage");
     actualPage.value = ++page;

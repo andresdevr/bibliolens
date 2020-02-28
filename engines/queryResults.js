@@ -10,25 +10,18 @@ const sequelize = new Sequelize
 
 const Book = sequelize.import(__dirname + '\\..\\models\\BookModel');
 
+var page = 0;
 
 function getQuery()
 {
+    getPage();
     var Books = Book.findAll();
     Books.then(
         books =>
         {
             for(var i=0; i < books.length; i++)
             {
-                console.log("id: " + books[i].id +
-                            " titulo: " + books[i].titulo +
-                            " autor: " + books[i].autor +
-                            " anio: " + books[i].anio +
-                            " genero: " + books[i].genero +
-                            " editorial: " + books[i].editorial +
-                            " contenido: " + books[i].contenido +
-                            " diponible: " + books[i].disponible);
-
-                createReg(  books[i].id, 
+                createReg(  books[i].idBook, 
                             books[i].titulo, 
                             books[i].autor,
                             books[i].anio,
@@ -77,11 +70,42 @@ function createReg(_id, _titulo, _autor, _anio, _genero, _editorial, _contenido,
 
 }
 
+function nextPage()
+{
+    var url = location.href.split("page=");
+    var page = parseInt(url[1]);
+    page++;
+    location.href = url[0] + 'page=' + page;
+}
 
+function previousPage()
+{
+    var url = location.href.split("page=");
+    var page = parseInt(url[1]);
+    page--;
+    location.href = url[0] + 'page=' + page;
+}
 
 //funcion llamada cuando se hace click en un libro
 function redirectTo(id) 
 {
     var url = __dirname + "\\bookInformation.html" + "?id=" + id; //genera una url con args
     location.href = url; //cambia la direccion actual a la url creada
+}
+
+function getPage()
+{ 
+    var pagination = document.getElementById("pagination");
+    var previous = document.getElementById("previous");
+    var next = document.getElementById("next");
+
+    var url = location.href.split("page=");
+    var page = parseInt(url[1]);
+
+    if(page <= 0)
+    {
+        pagination.parentNode.removeChild(previous);
+    }
+    var actualPage = document.getElementById("actualPage");
+    actualPage.value = ++page;
 }

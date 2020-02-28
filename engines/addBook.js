@@ -17,8 +17,9 @@ var _interval;
 
 function getData()
 {
-    clearInterval(_interval);
-    WebCamera.reset();
+    clearInterval(_interval); //elimina el intervalo de llamada a funcion 
+    WebCamera.reset(); //apaga la camara
+
     var data = document.forms["registro"]; //obtiene el formulario registro
     //del formulario obtiene la siguiente informacion
     var _titulo = data["titulo"].value; 

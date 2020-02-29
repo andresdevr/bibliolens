@@ -48,13 +48,6 @@ header {
 	-o-transition: all 0.1s ease-in-out;
 }
 
-.container {
-	margin-top: 10px;
-	padding-top: 10px;
-	background-color: #ffffff;
-	min-width: 50px;
-}
-
 .navbar {
 	width: auto;
 	height: auto;
@@ -95,19 +88,25 @@ header {
 
 /* SECTION */
 
-.main{
+section{
 	width: 100%;
-	min-height: 750px;
-	background:#1A488E
+	min-height: auto;
+	background:#1A488E;
+	display: flex;
+	flex-flow:column;
+	justify-content: center;
+	align-items: center;
 }
 
 /* FOOTER */
 
-.pai{
+footer{
 	width: 100%;
 	min-height:150px;
 	background: #4BB4DE;
 }
+
+
 
 /* BANNER DE IMAGENES (HEADER) */
 @keyframes pose{

@@ -14,6 +14,7 @@ const Loan = sequelize.import(__dirname + '\\..\\models\\LoanModel');
 
 function createDb()
 {
+    //crea las tablas asi como el archivo .sqlites
     Book.sync();
     User.sync();
     Loan.sync();

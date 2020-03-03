@@ -12,8 +12,14 @@ const Book = sequelize.import(__dirname + '\\..\\models\\BookModel');
 
 function getQuery()
 {
-    getPage();
-    var Books = Book.findAll();
+    var page = getPage();
+    var filter = 
+    {
+        offset: page * 5,
+        limit: page * 5 + 5
+    }
+
+    var Books = Book.findAll(filter);
     Books.then(
         books =>
         {
@@ -106,4 +112,5 @@ function getPage()
     }
     var actualPage = document.getElementById("actualPage");
     actualPage.value = ++page;
+    return actualPage.value - 1;
 }

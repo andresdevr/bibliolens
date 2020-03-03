@@ -20,7 +20,7 @@ function createWindow ()
     });
 
     // y carga la configuracion de la Db de la aplicación.
-    win.loadFile('views/search.html');
+    win.loadFile('views/index.html');
   
 }
 

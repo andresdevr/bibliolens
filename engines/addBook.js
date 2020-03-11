@@ -9,12 +9,12 @@ const sequelize = new Sequelize
     }
 );
 
-
+//importa los modelos para realizar instancias en un futuro
 const Book = sequelize.import(__dirname + '\\..\\models\\BookModel');
 const Inventory = sequelize.import(__dirname + '\\..\\models\\InventoryModel');
 
-var _inputs = new Array();
-var _interval;
+var _inputs = new Array(); //aqui se almacenan los inputs de id
+var _interval; //intervalo de llamado a python global
 
 function getData()
 {
@@ -29,8 +29,8 @@ function getData()
     var _genero = data["genero"].value;
     var _editorial = data["editorial"].value;
     var cantidad = data["cantidad"].value;
-    var idNewBook;
 
+    //crea un diccionario con la informacion del registro
     var newBook =
     {
         titulo: _titulo,
@@ -40,8 +40,19 @@ function getData()
         editorial: _editorial,
         contenido: null
     };
-    Book.create(newBook);
-    
+
+    //corregir, funciona como frankstein, a veces si a veces no y lo hace mal
+    //crea una instancia del registro en Book
+    Book.create(newBook).then(book => { 
+        for(var i=0; i<cantidad; i++) //para crear un registro en inventories por cada id de libro que se registra en el formulario
+        {
+            //crea una instancia del registro en Inventory
+            Inventory.create({
+                id: _inputs[i].value,
+                idBook: book.id
+            });
+        }
+    });
 }
 
 function addInput()

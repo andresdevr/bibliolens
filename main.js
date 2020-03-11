@@ -1,5 +1,14 @@
 const { app, BrowserWindow } = require('electron');
 const fs = require('fs');
+const { Sequelize, Model, DataTypes } = require('sequelize');
+const sequelize = new Sequelize
+(
+    {
+        dialect: 'sqlite',
+        storage: __dirname + '\\..\\database\\database.sqlite'
+    }
+);
+
 function createWindow () 
 {
     // Crea la ventana del navegador.
@@ -17,10 +26,11 @@ function createWindow ()
 
     win.on('closed', () =>
     {
+        sequelize.close();
     });
 
     // y carga la configuracion de la Db de la aplicación.
-    win.loadFile('views/index.html');
+    win.loadFile('views/configDb.html');
   
 }
 

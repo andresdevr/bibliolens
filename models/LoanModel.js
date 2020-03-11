@@ -7,7 +7,7 @@ const sequelize = new Sequelize
     }
 );
 
-const Book = sequelize.import('BookModel');
+const Inventory = sequelize.import('InventoryModel');
 const User = sequelize.import('UserModel');
 
 module.exports = (sequelize, DataTypes) =>
@@ -18,12 +18,6 @@ module.exports = (sequelize, DataTypes) =>
     (
         {
             //atributos de Loan
-            idLoan:
-            {
-                type: DataTypes.INTEGER,
-                primaryKey: true,
-                allowNull: false
-            },
             tipoPrestamo:
             {
                 type: DataTypes.STRING,
@@ -34,8 +28,8 @@ module.exports = (sequelize, DataTypes) =>
                 type: DataTypes.INTEGER,
                 references:
                 {
-                    model: Book,
-                    key: 'idBook'
+                    model: Inventory,
+                    key: 'id'
                 }
             },
             idUser:
@@ -44,7 +38,7 @@ module.exports = (sequelize, DataTypes) =>
                 references:
                 {
                     model: User,
-                    key: 'idUser'
+                    key: 'id'
                 }
             }
             //fin de los atributos de Loan

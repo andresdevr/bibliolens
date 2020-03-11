@@ -16,12 +16,6 @@ module.exports = (sequelize, DataTypes) =>
     (
         {
             //atributos de Book
-            idBook:
-            {
-                type: DataTypes.INTEGER,
-                primaryKey: true,
-                allowNull: false
-            },
             titulo:
             {
                 type: DataTypes.STRING,
@@ -51,10 +45,6 @@ module.exports = (sequelize, DataTypes) =>
             {
                 type: DataTypes.TEXT,
                 allowNull: true
-            },
-            disponible:
-            {
-                type: DataTypes.BOOLEAN
             }
             //fin de los atributos de Book
         },

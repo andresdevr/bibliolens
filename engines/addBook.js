@@ -11,6 +11,7 @@ const sequelize = new Sequelize
 
 
 const Book = sequelize.import(__dirname + '\\..\\models\\BookModel');
+const Inventory = sequelize.import(__dirname + '\\..\\models\\InventoryModel');
 
 var _inputs = new Array();
 var _interval;
@@ -28,26 +29,19 @@ function getData()
     var _genero = data["genero"].value;
     var _editorial = data["editorial"].value;
     var cantidad = data["cantidad"].value;
+    var idNewBook;
 
-    //realiza un registro por cada libro(distitno ID)
-    for (var i=0; i < cantidad; i++)
+    var newBook =
     {
-        //llama al metodo create con los atributos deseados en el nuevo registro
-        var book = Book.create
-        (
-            {
-                //atributos del nuevo registro
-                idBook: parseInt(_inputs[i].value), //de un string, convierte a integer
-                titulo: _titulo,
-                autor: _autor,
-                anio: parseInt(_anio), //de un string, convierte a integer
-                genero: _genero,
-                editorial: _editorial,
-                contenido: null, //este campo se llenara con script de python
-                disponible: true
-            }
-        );
-    }
+        titulo: _titulo,
+        autor: _autor,
+        anio: parseInt(_anio),
+        genero: _genero,
+        editorial: _editorial,
+        contenido: null
+    };
+    Book.create(newBook);
+    
 }
 
 function addInput()

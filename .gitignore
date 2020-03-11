@@ -1,6 +1,5 @@
 node_modules/
 dist/
-database/*
 *.sqlite
 *.sqlite3
 *.sqlite-journal

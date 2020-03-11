@@ -8,6 +8,7 @@ const sequelize = new Sequelize
     }
 );
 
+//importa los modelos creados en sequelize
 const Book = sequelize.import(__dirname + '\\..\\models\\BookModel');
 const Inventory = sequelize.import(__dirname + '\\..\\models\\InventoryModel');
 const User = sequelize.import(__dirname + '\\..\\models\\UserModel');
@@ -20,7 +21,7 @@ function createDb()
     User.sync();
     Inventory.sync();
     Loan.sync();
-    location.href = __dirname + '/addBook.html';
+    location.href = __dirname + '/search.html'; //redirige al index una vez todas las tablas se hayan sincronizado
 }
 
 

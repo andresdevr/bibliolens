@@ -162,7 +162,7 @@ viernes 14 de febrero del 2020
     https://www.bitdegree.org/learn/javascript-settimeout/amp&usg=AFQjCNECnZvDdeVKRjC_L8ITtfg6o3X3cw
     https://www.bitdegree.org/learn/javascript-settimeout/amp&usg=AFQjCNECnZvDdeVKRjC_L8ITtfg6o3X3cw
 
-martes 19 de febrero del 2020
+martes 18 de febrero del 2020
     https://www.base64decode.net/python-base64-b64decode
     https://css-tricks.com/data-uris/
     https://pypi.org/project/python-datauri/
@@ -182,4 +182,62 @@ martes 19 de febrero del 2020
     https://www.base64decode.net/python-base64-b64decode&usg=AFQjCNFKSL6YO1YCLIfal2lX8PLwqNrwew
     https://pillow.readthedocs.io/&usg=AFQjCNE6ODwGa847ydBopzH1a7si1jk1SQ
 
+miercoles 19 de febrero del 2020
+	https://ourcodeworld.com/articles/read/202/how-to-include-and-use-jquery-in-electron-framework
+	
+martes 25 de febrero del 2020
+	https://sequelize.org/
+	https://sequelize.org/v5/manual/models-definition.html
+	
+miercoles 26 de febrero del 2020
+	https://sequelize.org/v5/manual/models-definition.html#import
+	https://sequelize.org/v5/
+	https://alligator.io/nodejs/how-to-use__dirname/
+	https://sequelize.org/v5/manual/models-definition.html
+	
+jueves 27 de febrero del 2020
+	https://sequelize.org/v5/manual/models-definition.html
+	https://sequelize.org/v5/manual/getting-started.html
+	https://sequelize.org/v5/manual/querying.html
+	https://www.w3schools.com/html/html_symbols.asp
+	https://stackoverflow.com/questions/22607150/getting-the-url-parameters-inside-the-html-page
+	https://sequelize.org/v5/manual/querying.html#pagination---limiting
+	https://www.abeautifulsite.net/adding-and-removing-elements-on-the-fly-using-javascript
+
+saabado 29 de febrero del 2020
+	https://sequelize.org/v5/manual/querying.html&usg=AFQjCNECWBxJzp3mavvLV2gN7TtMtlbhPA
+	https://sequelize.org/v5/&usg=AFQjCNGRHQhzgYN5iYqa3TAqrkltIsHh9g
+	https://sequelize.org/&usg=AFQjCNFasgXRHnV6aNdHjbIc5p69XuexNw
+	
+jueves 05 de marzo del 2020
+	https://stackoverflow.com/questions/31815076/node-sequelize-how-to-check-if-item-exists-before-adding-async-confusion
+	https://sequelize.org/master/
+	https://sequelize.org/
+	https://sequelize.org/v5/manual/instances.html
+	
+lunes 09 de marzo del 2020
+	https://sequelize.org/
+	https://sequelize.org/v5/
+	https://sequelize.org/v5/manual/models-usage.html
+	https://sequelize.org/v5/manual/models-definition.html
+	https://www.npmjs.com/package/sleep&usg=AFQjCNHlr_YyHE7KjnP-Y3aL9w8efqHOkA
+	https://sequelize.org/v5/manual/getting-started.html&usg=AFQjCNEYiGpvImJ7T6Utt-7JCqgESJ-GaQ
+	https://stackoverflow.com/questions/20967006/how-to-create-a-sleep-delay-in-nodejs-that-is-blocking&usg=AFQjCNFuGfuAUMVCh9wGgxPaDo-tLP_noQ
+	https://www.npmjs.com/package/sleep&usg=AFQjCNHlr_YyHE7KjnP-Y3aL9w8efqHOkA
+	https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Operadores/await&usg=AFQjCNGHc7dZsRHDjVkrojvF721eX_suyQ
+	https://www.sitepoint.com/delay-sleep-pause-wait/&usg=AFQjCNHiIavE1c5PwGCBvf74KFq_4DaGag
+	https://stackoverflow.com/questions/14249506/how-can-i-wait-in-node-js-javascript-l-need-to-pause-for-a-period-of-time/41957152&usg=AFQjCNG_VT8q7wiccFplKOhbnU9RHnymgA
+	
+	
+martes 10 de marzo del 2020
+	https://sequelize.org/v5/manual/models-definition.html
+	https://sequelize.org/v5/manual/hooks.html
+	https://sequelize.org/v5/manual/models-usage.html
+	https://sequelize.org/v5/manual/instances.html
+	https://www.w3schools.com/jsref/prop_node_childnodes.asp
+	https://pypi.org/project/pytesseract/
+	https://www.google.com/url?q=https://pypi.org/project/pytesseract/&usg=AFQjCNHo65QB9KtQSMlpD9Axp8_3evT3kg
+	https://www.google.com/url?q=https://www.w3schools.com/jsref/prop_node_childnodes.asp&usg=AFQjCNFNfJ7a2xmsIbv_aVDzVbYi_d8PHQ
+	https://www.google.com/url?q=http://www.w3schools.com/jsref/prop_node_childnodes.asp&usg=AFQjCNFJCti2VMf95cMEfBc1Vs1QsYspCw
+	
     

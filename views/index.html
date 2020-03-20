@@ -18,7 +18,7 @@
 			href="https://fonts.googleapis.com/css?family=Muli&display=swap"
 			rel="stylesheet"
 		/>
-		<link rel="stylesheet" href="./Styles/css/index.css">
+		<link rel="stylesheet" href="./Styles/css/index.css" />
 		<link
 			rel="stylesheet"
 			href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
@@ -29,71 +29,84 @@
 		<script>
 			window.$ = window.jQuery = require('./js/jquery.js');
 		</script>
+		<script src="./js/efectScroll.js"></script>
 		<title>BIBLIOLENS</title>
 	</head>
 
 	<body id="fonts">
 		<!--NAVBAR Y HEADER DE BIENVENIDA-->
-		<header class="header header-expand-lg">
-			<div class="banner">
-				<div
-					class="container"
-					style="margin-top: 10px;
-					padding-top: 10px;
-					background-color: #ffffff;
-					min-width: 50px;"
-				>
-					<nav class="navbar navbar-expand-lg">
-						<img src="./Styles/img/LOGO.png" />
-						<a
-							class="navbar-brand"
-							style="color:#1A488E; font-size: 26px; font-weight: bold;"
-							href="#"
-							>BIBLIOLENS</a
-						>
-						<button
-							class="navbar-toggler btn btn-light active"
-							type="button"
-							data-toggle="collapse"
-							data-target="#navbarNav"
-							aria-controls="navbarNav"
-							aria-expanded="false"
-							aria-label="Toggle navigation"
-						>
-						<i class="navbar-toggler fa fa-bars" aria-hidden="true"></i>
-						</button>
 
-						<div class="collapse navbar-collapse" id="navbarNav">
-							<div class="navbar-nav ml-auto">
-								<a class="nav-item nav-link active" href="#"
-									><i class="fa fa-bookmark" aria-hidden="true"></i> INICIO</a
+		<header>
+			<nav
+				class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar"
+			>
+				<div class="container">
+					<img src="./Styles/img/Bibliolens .png" style="width: 50px;" />
+					<a class="navbar-brand" href="index.html">BIBLIOLENS</a>
+
+					<button
+						class="navbar-toggler"
+						type="button"
+						data-toggle="collapse"
+						data-target="#navbarTogglerDemo02"
+						aria-controls="#navbarTogglerDemo02"
+						aria-expanded="false"
+						aria-label="Toggle navigation"
+					>
+						<span class="navbar-toggler-icon"></span>
+					</button>
+
+					<div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+						<div class="navbar-nav ml-auto smooth-scroll">
+							<a nav-item nav-link active
+								><i class="fa fa-bookmark" aria-hidden="true"></i>INICIO</a
+							>
+							<a nav-item nav-link
+								><i class="fa fa-search" aria-hidden="true"></i>BIBLIOEARCH</a
+							>
+							<a nav-item nav-link
+								><i class="fa fa-cubes" aria-hidden="true"></i>EXPLORAR</a
+							>
+							<a nav-item nav-link
+								><i class="fa fa-briefcase" aria-hidden="true"></i
+								>COLECCIONES</a
+							>
+							<a nav-item nav-link
+								><i class="fa fa-user-circle-o" aria-hidden="true"></i
+								>ADMINISTRADOR</a
+							>
+							<a nav-item nav-link
+								><i class="fa fa-address-book" aria-hidden="true"></i
+								>CONTACTO</a
+							>
+						</div>
+					</div>
+				</div>
+			</nav>
+
+			<div id="intro" class="view">
+				<div
+					class="mask rgba-gradient d-flex justify-content-center align-items-center"
+				>
+					<div class="container px-md-3 px-sm-0">
+						<div class="row wow fadeIn">
+							<div class="col-md-12 mb-4 white-text text-center wow fadeIn">
+								<h3
+									class="display-3 font-weight-bold white-text mb-0 pt-md-5 pt-5"
 								>
-								<a class="nav-item nav-link" href="#"
-									><i class="fa fa-search" aria-hidden="true"></i> BÚSQUEDA</a
-								>
-								<a class="nav-item nav-link" href="#"
-									><i class="fa fa-folder-open" aria-hidden="true"></i>
-									EXPLORAR</a
-								>
-								<a class="nav-item nav-link" href="#"
-									><i class="fa fa-cubes" aria-hidden="true"></i> COLECCIONES</a
-								>
-								<a class="nav-item nav-link" href="#"
-									><i class="fa fa-user-circle" aria-hidden="true"></i>
-									ADMINISTRADOR</a
-								>
-								<a class="nav-item nav-link" href="#"
-									><i class="fa fa-address-book" aria-hidden="true"></i>
-									CONTACTO</a
-								>
+									BIENVENIDOS
+								</h3>
+								<hr class="hr-light my-4 w-75" />
+								<h4 class="subtext-header mt-2 mb-4">
+									UN HOGAR DE LIBROS PARA EL ALMA
+								</h4>
 							</div>
 						</div>
-					</nav>
+					</div>
 				</div>
-
-				<h1 class="display-1" style="color: white;">BIENVENIDOS</h1>
 			</div>
 		</header>
+
 		<!--NAVBAR Y HEADER DE BIENVENIDA-->
 
 		<!--BIBLIOEARCH (BARRA DE BUSQUEDA)-->
@@ -102,28 +115,41 @@
 
 		<!--SECTION-->
 
-		<section>
-			<div
-				class="row mx-auto bg-light"
-				style=" width: 1500px; min-height:auto; padding: 10px; margin: 10px;"
-			>
-				<div class="col-lg-9 bg-danger"></div>
-
-				<div class="col-lg-3 bg-primary"></div>
-			</div>
-		</section>
+		<section></section>
 
 		<!--SECTION-->
 
 		<!--FOOTER-->
-
-		<footer>
-			<div
-				class="container"
-				style="background: #ffffff; min-height: 100px;"
-			></div>
-		</footer>
-
+		<footer class="page-footer font-small pt-4">
+			<div class="container">
+			<ul class="list-unstyled list-inline text-center">
+				<li class="list-inline-item">
+				<a class="btn-floating btn-fb mx-1">
+					<i class="fa fa-facebook"> </i>
+				</a>
+				</li>
+				<li class="list-inline-item">
+				<a class="btn-floating btn-tw mx-1">
+					<i class="fa fa-twitter"> </i>
+				</a>
+				</li>
+				<li class="list-inline-item">
+				<a class="btn-floating btn-gplus mx-1">
+					<i class="fa fa-google-plus"> </i>
+				</a>
+				</li>
+				<li class="list-inline-item">
+				<a class="btn-floating btn-li mx-1">
+					<i class="fa fa-linkedin"> </i>
+				</a>
+				</li>
+			</ul>	
+			</div>
+		
+			<div class="footer-copyright text-center py-3">© 2020 Copyright:
+			<a href="index.html"> BIBLIOLENS</a>
+			</div>
+		  </footer>
 		<!--FOOTER-->
 
 		<!-- BOOTSTRAP 4 & JQUERY-->

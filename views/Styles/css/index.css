@@ -4,10 +4,6 @@
   padding: 0;
   margin: 0; }
 
-html {
-  height: 100%;
-  overflow: hidden; }
-
 @font-face {
   font-family: 'aqua';
   src: url(../aqua.ttf); }
@@ -15,65 +11,39 @@ html {
   font-family: 'aqua'; }
 
 body {
-  background: whitesmoke; }
+  background: whitesmoke;
+  height: 100%; }
 
+html,
+body,
+header,
+#intro {
+  height: 100%; }
+
+/* V A R I A B L E S */
 /* HEADER */
 header {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  position: relative;
   width: 100%;
-  min-height: 750px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row;
-          flex-flow: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   background-image: url(../img/FONDE1.jpg);
   background-size: cover;
-  -webkit-animation: pose 28s infinite linear;
-          animation: pose 28s infinite linear;
-  transition: all 0.1s ease-in-out;
-  -webkit-transition: all 0.1s ease-in-out;
-  -moz-transition: all 0.1s ease-in-out;
-  -ms-transition: all 0.1s ease-in-out;
-  -o-transition: all 0.1s ease-in-out; }
+  background-repeat: no-repeat;
+  -webkit-animation: pose 60s infinite linear;
+          animation: pose 60s infinite linear; }
 
-.navbar {
-  width: auto;
-  height: auto; }
+.top-nav-collapse, .page-footer {
+  background-color: #110ec7 !important; }
 
-.navbar img {
-  width: 65px;
-  margin: 2px; }
-
-.navbar a {
-  font-size: 13px;
-  color: #1A488E; }
-
-.navbar i {
-  width: 10px;
-  margin: 0.5px; }
+.navbar:not(.top-nav-collapse) {
+  background: transparent !important; }
 
 /* SECTION */
 section {
+  margin-top: 20px;
   width: 100%;
-  min-height: auto; }
+  height: 1500px;
+  background-color: white; }
 
 /* FOOTER */
-footer {
-  width: 100%;
-  min-height: 150px;
-  background: #4BB4DE; }
-
 /* BANNER DE IMAGENES (HEADER) */
 @-webkit-keyframes pose {
   0% {
@@ -109,5 +79,14 @@ footer {
     background-image: url(../img/FONDE4.jpg); }
   100% {
     background-image: url(../img/FONDE4.jpg); } }
+@media (max-width: 740px) {
+  html,
+  body,
+  header,
+  #intro {
+    height: 100vh; } }
+@media (max-width: 991px) {
+  .navbar:not(.top-nav-collapse) {
+    background: #110ec7 !important; } }
 
 /*# sourceMappingURL=index.css.map */

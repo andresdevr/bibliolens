@@ -1,5 +1,5 @@
 const { app, BrowserWindow } = require('electron');
-const fs = require('fs');
+
 const { Sequelize, Model, DataTypes } = require('sequelize');
 const sequelize = new Sequelize
 (

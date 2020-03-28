@@ -16,7 +16,7 @@ data = decode(encoded) #decodifica la informacion de uri
 image = Image.open(BytesIO(data)).convert("LA") #abre la imagen con PIL en escala de grises
 image = image.filter(ImageFilter.UnsharpMask(15, 150, 1)) #aplica un filtro para que las esquinas resalten
 
-text = pyt.image_to_string(image, lang='esp') #tesseract extrae la informacion de la imagen
+text = pyt.image_to_string(image, lang='spa') #tesseract extrae la informacion de la imagen
 
 save = BytesIO() #creamos una instacia de io
 image.save(save, 'PNG') #guardamos la imagen en la instancia de io

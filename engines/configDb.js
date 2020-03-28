@@ -21,7 +21,7 @@ function createDb()
     User.sync();
     Inventory.sync();
     Loan.sync();
-    location.href = __dirname + '/search.html'; //redirige al index una vez todas las tablas se hayan sincronizado
+    location.href = __dirname + '/addBook.html'; //redirige al index una vez todas las tablas se hayan sincronizado
 }
 
 

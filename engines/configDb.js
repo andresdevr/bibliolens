@@ -17,11 +17,11 @@ const Loan = sequelize.import(__dirname + '\\..\\models\\LoanModel');
 function createDb()
 {
     //crea las tablas asi como el archivo .sqlite
-    Book.sync();
-    User.sync();
-    Inventory.sync();
-    Loan.sync();
-    location.href = __dirname + '/addBook.html'; //redirige al index una vez todas las tablas se hayan sincronizado
+    Book.sync(); sequelize.close();
+    User.sync(); sequelize.close();
+    Inventory.sync(); sequelize.close();
+    Loan.sync(); sequelize.close();
+    location.href = __dirname + '/index.html'; //redirige al index una vez todas las tablas se hayan sincronizado
 }
 
 
